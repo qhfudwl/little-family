@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 초기화 */
+body, h1, h2, h3, h4, h5, h6, ul, p, a, li {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+address, small {font: 16px 'Raleway', sans-serif; margin: 10px 0;}
+/* class=hidden */
+.hidden {position: absolute; left: -9999px;}
+/* body 색 지정 */
+body {
+    background: #ddddbd url(../images/수채화.jpg) no-repeat fixed center / cover;
+}
+/* header 꾸미기 */
+#header {
+    margin: 10px; height: 60px; width: 98%; transition-duration: 0.3s;
+    overflow: hidden; background: url(../images/menu2.png) no-repeat 97% 15px;
+    border-radius: 30px;
+    /* border: 1px solid tomato; */
+    min-width: 1000px; z-index: 1000; font-family: 'Raleway', sans-serif;
+    position: fixed; top: 0; left: 0;
+    /* 위치값을 반드시 적어줘야한다. */
+}
+#header:hover {
+    transition-duration: 0.3s; background: rgba(0, 0, 0, 0.6) none;
+    border-radius: 30px;
+}
+#header h1 a {
+    display: block; width: 80px; height: 40px; float: left;
+    background: url(../images/logo_3-1.png) no-repeat center;
+    /* border: 1px solid tomato; */
+    text-indent: -9999px; margin: 10px 0 0 15px;
+}
+#header:hover h1 a {background: url(../images/logo_3-2.png) no-repeat center;}
+/* 메뉴 꾸미기 */
+#gnb {opacity: 0; transition-duration: 0.3s;}
+#header:hover #gnb {opacity: 1; transition-duration: 0.3s;}
+#gnb > ul {float: right; line-height: 60px;}
+#gnb > ul > li {float: left; padding-right: 80px;}
+#gnb > ul > li > a {color: #fcfbfa; position: relative;}
+#gnb > ul > li > a:hover {color: gold; text-shadow: 0 0 10px rgb(7, 247, 255);}
+
+/* 본문 꾸미기 */
+/* main, aside wrap 최소/최대 크기 */
+#wrap {margin: 0 auto; min-width: 1000px;}
+/* main {border: 1px solid black;} */
+/* aside {border: 1px solid red;} */
+/* section 공통 */
+section {
+    height: 100vh; font-family: 'Cafe24SsurroundAir', sans-serif;
+    min-height: 850px;
+    position: relative;
+}
+/* section1 - introduction */
+#introduction {
+    display: table-cell; vertical-align: middle; text-align: center; width: 100vw;
+    /* box-shadow: 0 0 20px #000; */
+    /* background: tomato; */
+}
+#introduction p {
+    box-shadow: 0 0 20px black; padding: 20px 0;
+    background: linear-gradient(to left, #40E0D0, #FF8C00, #FF0080);
+    color: transparent; -webkit-background-clip: text;
+    font: bold 70px 'Raleway',sans-serif;
+    /* font-size: 70px; font-family: 'Raleway', sans-serif; font-weight: bold; */
+}
+/* section2,3 공통 */
+section .intro {
+    position: relative; top: 100px; left: calc(50% - 480px); float: left;
+    background-color: rgba(0, 0, 0, 0.5); transition-duration: 1s;
+    border-radius: 30px; margin-left: 20px; padding: 20px; box-sizing: border-box;
+    width: 450px; height: 0; overflow: hidden; opacity: 0;
+}
+section:hover .intro {
+    width: 450px; height: 400px; transition-duration: 1s;
+    opacity: 1;
+}
+img {
+    width: 460px;
+    position: relative; top: 250px; left: calc(50% - 520px);
+    border-radius: 30px;
+}
+.intro h2 {margin: 15px 0; font-size: 40px; color: white;}
+.intro h3 {margin: 10px 0; font-size: 30px; color: white;}
+.intro p {font-size: 20px; color: white;}
+/* section2 aru */
+/* #aru {background: rgba(0, 0, 255, 0.1);} */
+/* 위에 색을 입히기 위해서 사용 - 공통 section에다가 position: relative;를 써줘야한다. */
+#aru::before {
+    content: ""; width: 100%; height: 100vh; background: rgba(0, 0, 255, 0.1);
+    position: absolute; top: 0; left: 0; /* section과 겹쳐지게 하기 위해서 */
+}
+/* section3 hanggi */
+
+/* aside */
+aside {
+    text-align: center; height: 60px; 
+    position: fixed;  bottom: 10px; right: 10px;
+}
+aside a {
+    display: block; width: 60px; height: 60px; text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.6); border-radius: 50px; color: white;
+    padding: 7px 0 0 0; box-sizing: border-box;
+}
+aside a:hover {color: gold; text-shadow: 0 0 10px white;}
+/* footer */
+#footer {
+    margin: 0 auto; background: rgba(0, 0, 0, 0.6); color: white;
+    padding: 30px; text-align: center;
+}

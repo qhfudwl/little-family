@@ -2,54 +2,72 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>요안도라</title>
-        <link rel="stylesheet" href="css/joandora.css">
+        <title>R & H</title>
+        <link rel="stylesheet" href="css/RandH.css">
     </head>
     <body>
         <header id="header">
-            <hgroup>
-                <h1>Joandora</h1>
-                <h2>가장 제주다운 수산리집</h2>
-            </hgroup>
+            <h1><a href="#">R&H</a></h1>
+            <nav id="gnb">
+                <h2 class="hidden">주요 메뉴</h2>
+                <ul>
+                    <li><a href="#introduction">introduction</a></li>
+                    <li><a href="#aru">Aru</a></li>
+                    <li><a href="#hgi">Hanggi</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
         </header>
-        <hr class="hidden">
-        <nav id="gnb">
-            <h2 class="hidden">주요 메뉴</h2>
-            <ul>
-                <li><a href="#">이용 안내</a></li>
-                <li class="on"><a href="#">객실 소개</a></li>
-                <li><a href="#">예약 방법</a></li>
-                <li><a href="#">예약하기</a></li>
-            </ul>
-        </nav>
-        <hr class="hidden">
-        <main>
-            <section id="content">
-                <h2>객실 소개</h2>
-                <p>&curren; 요안도라는 게스트 하우스(Guest House) 형식의 농어촌 민박입니다.</p>
-                <div id="img">
-                    <article>
-                        <h3 class="hidden">동백방 4인실 유채방 4인실 </h3>
-                        <figure id="dong">
-                            <img src="images/yu.png" alt="유채방 4인실">
-                            <img src="images/dong.png" alt="동백방 4인실">
-                            <figcaption>동백방과 유채방은 4인실로 동성 4인 또는 가족 1팀이 함께 묵을 수 있습니다. 1인 20,000원</figcaption>
-                        </figure>
-                        <h3 class="hidden">천혜향 2인실 </h3>
-                        <!-- figure는 비디오, 오디오도 포함 -->
-                        <figure id="cheon">
-                            <img src="images/che.png" alt="천혜향 2인실">
-                            <figcaption>천혜향방은 2인실입니다. 1인 20,000원</figcaption>
-                        </figure>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <hr class="hidden"> 
-        <footer>
-            <p>제주특별자치도 남제주군 성산읍 수산리 000 번지 요안도라 </p>
-            <address><strong>예약문의 070-###-####</strong>, yoan##@naver.com</address>
-            <small>Copyright ⓒ. All rights reserved. </small>
+        <div id="wrap">
+            <main>
+                <section id="introduction">
+                    <h2 class="hidden">소개글</h2>
+                    <p>
+                        Let me introduce<br>
+                        My Little Family
+                    </p>
+                </section>
+                <section id="aru">
+                        <div class="intro">
+                            <h2>Aru</h2>
+                            <h3>나이</h3>
+                            <p>14살</p>
+                            <h3>생년월일</h3>
+                            <p>2007년 6월 19일</p>
+                            <h3>특징</h3>
+                            <p>
+                                1. 성질이 사나움<br>
+                                2. 얼굴이 예쁨<br>
+                                3. 털이 별로 없음<br>
+                            </p>
+                        </div>
+                        <img src="images/Aru.jpg" alt="우리 이쁜 아루">
+                </section>
+                <section id="hgi">
+                        <div class="intro">
+                            <h2>Hyanggi</h2>
+                            <h3>나이</h3>
+                            <p>8살</p>
+                            <h3>생년월일</h3>
+                            <p>2013년 11월 18일</p>
+                            <h3>특징</h3>
+                            <p>
+                                1. 사람을 굉장히 좋아함<br>
+                                2. 눈, 코, 입이 약간 몰림<br>
+                                3. 털이 굉장히 많음<br>
+                            </p>
+                        </div>
+                        <img src="images/Hyanggi.jpg" alt="귀여운 향기">
+                </section>
+            </main>
+            <aside>
+                <h2 class="hidden">상단바로가기</h2>
+                <a href="#">▲<br>top</a>
+            </aside>
+        </div>
+        <footer id="footer">
+            <address>대구 북구 ##동 ##아파트 ##동 ####호</address>
+            <small>Copyright &copy; 2021 R and H</small>
         </footer>
     </body>
 </html>
